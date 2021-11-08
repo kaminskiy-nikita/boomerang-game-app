@@ -1,5 +1,4 @@
-// Основной файл.
-// Запускает игру.
+
 const Game = require('./src/Game');
 const getPlayersSkinFromDB = require('./getPlayersSkinFromDB');
 
@@ -17,7 +16,7 @@ async function run() {
     boomerangs.push(skins.skin_gun);
   });
 
-  // Инициализация игры с настройками.
+
   const game = new Game({
     trackLength: 30,
     rowLength: 8,
