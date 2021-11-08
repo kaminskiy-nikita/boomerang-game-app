@@ -1,7 +1,3 @@
-// Импортируем всё необходимое.
-// Или можно не импортировать,
-// а передавать все нужные объекты прямо из run.js при инициализации new Game().
-
 const { promisify } = require('util');
 const music = require('play-sound')((opts = {}));
 const rl = require('readline');
@@ -21,9 +17,6 @@ const readline = rl.createInterface({
 readline.question[promisify.custom] = (question) => new Promise((resolve) => {
   readline.question(question, resolve);
 });
-
-// Основной класс игры.
-// Тут будут все настройки, проверки, запуск.
 
 class Game {
   constructor({
