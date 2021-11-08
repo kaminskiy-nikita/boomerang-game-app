@@ -1,7 +1,3 @@
-// Умеешь работать с keypress? Попробуй разобраться в этом файле.
-// Вместо keypress можно использовать и стандартный readline.
-// Главное не используй всё вместе!
-
 const readline = require('readline');
 
 function runInteractiveConsole(keyboard) {
