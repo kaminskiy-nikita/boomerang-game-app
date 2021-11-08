@@ -1,6 +1,3 @@
-// Сделаем отдельный класс для отображения игры в консоли.
-// const runInteractiveConsole = require('./keyboard');
-
 class View {
   render(track, scores, level) {
     const yourTeamName = 'Tigers';
